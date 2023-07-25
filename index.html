@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst Website</title>
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- lato google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- tailwind custom color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
 </head>
-<body>
+
+<body class="font-lato">
+    <header>
+           <nav class="mx-60 pt-11">
+            <div class="navbar  rounded-full  bg-red-400 ">
+                <div class=" flex-1 gap-48 text-white ">
+                    <ul class="flex gap-6 text-xs font-normal pl-5 ">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                  <a  class=" btn btn-ghost normal-case text-xl   text-white text-center font-bold text-4xl"> <img src="images/logo.png" alt=""> Fruit Burst</a>
+                </div>
+                <div class="flex-none gap-2 ">
+                  <div class="form-control pr-5 ">
+                    <input type="text" placeholder="Search" class="rounded-full input input-bordered w-24 md:w-auto bg-white " />
+                  </div>
+             
+                  </div>
+                </div>
+              </div>
+           </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
